@@ -15,7 +15,7 @@ function App() {
     } else {
       setImg(loadingImg)
       // need the CORS proxy to get this
-      const URL = `"https://api.codetabs.com/v1/proxy?quest=http://api.qrserver.com/v1/create-qr-code/?data=${website}&size=200x200&color=${color}`      
+      const URL = `https://api.codetabs.com/v1/proxy?quest=http://api.qrserver.com/v1/create-qr-code/?data=${website}&size=200x200&color=${color}`      
       const res = await fetch(URL);
       const imageBlob = await res.blob()
       const imageObjectURL = window.URL.createObjectURL(imageBlob);
