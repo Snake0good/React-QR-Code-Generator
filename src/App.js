@@ -1,5 +1,4 @@
-import Button from './Button';
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import loadingImg from './images/blocks-loading.gif'
 import jacobWebsite from './images/jacob-website.PNG'
 import noAddress from './images/noAddress.PNG'
@@ -46,7 +45,7 @@ function App() {
         <p></p>
       </header>
       <div className="qr-code">
-        <img src={img} />
+        <img src={img} alt='generated-qr-code'/>
       </div>
 
       <div className='inputs'>
